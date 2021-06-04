@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Rick and Morty</title>
+        <meta name="author" content="Ivo Montanari">
+        <link rel="stylesheet" href="style.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    </head>
+    <body class="bg-dark mt-0">
+            <audio autoplay loop="true" volume="30">
+                <source src="/sound/street-fighter.mp3" type="audio/mpeg">
+            </audio> 
+        <div class="container bg-light mt-1 rounded">
+            <div class="container d-inline-flex justify-content-around align-items-center">
+                <img src="img/Rick.jpg" alt="Rick">
+                <div class="marcador border border-dark rounded text-center display-2"><p id="score-rick">0</p></div>
+                <div class="d-flex flex-column">
+                    <img src="img/vs.png" alt="VS" width="100px;" class="d-flex align-self-center">
+                    <button type="button" class="btn bg-dark text-light text-center mt-3" id="start">¡Rick Sanchez NUNCA pierde! ¡Reinicia!</button>
+
+                </div>
+                <div class="marcador border border-dark rounded text-center display-2"><p id="score-morty">0</p></div>
+                <img src="img/Morty.png" alt="Morty">
+            </div>
+        </div>
+        
+        <div class="container bg-light mt-1 rounded mb-1">
+            <div class="container d-inline-flex justify-content-center">
+                <div class="">
+                    <div class="m-2 pt-"><button class="btn" id="btn-rock"><img src="img/Rock.png" alt="Piedra" width="100" class="border border-dark"></button></div>
+                    <div class="m-2"><button class="btn" id="btn-paper"><img src="img/Paper.png" alt="Papel" width="100" class="border border-dark"></button></div>
+                    <div class="m-2 pb-2"><button class="btn" id="btn-scissor"><img src="img/Scissors.png" alt="Tijera" width="100" class="border border-dark"></button></div>
+                </div>              
+                <div class="d-flex align-items-center">
+                    <div class="choose border border-dark rounded" id="rick"></div>                  
+                    <img src="img/vs.png" alt="VS">
+                    <div class="choose border border-dark rounded" id="morty"></div>
+                </div>
+            </div>
+        </div>
+        <script src="add.js"></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    </body>
+</html>

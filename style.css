@@ -1,0 +1,17 @@
+.marcador {
+    width: 100px;
+    height: 100%;
+}
+.choose {
+    width: 300px;
+    height: 300px;
+}
+
+#rick {
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#morty {
+    background-repeat: no-repeat;
+    background-size: cover;
+}
